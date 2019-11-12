@@ -1,12 +1,14 @@
 # mongo-mongoose
+When a user visits the site, the app will scrape articles from a the NHL website and display them for the user. Each scraped article will be saved to the application database. At a minimum, the app will scrape and display the following information for each article:
 
 
+ * Headline - the title of the article
 
-The application will let the user scrape news articles from New York Times website. When the user clicks on Scrape Article button a certain amount of articles will get displayed as a card with the following information Title, Link to the Article(Click on "Go to the article link"), Summary and byline if it's available from New York Times on the web page.
+ * Summary - a short summary of the article
 
-The user can save the article by clicking on Save Article button. The saved article can be viewed by clicking on Saved Article link present in the Navbar.
+ * URL - the url to the original article
 
-A note can be created in the saved article by clicking on Create Notes button. Once the button is clicked a modal will get displayed for the user to create a note. As many number of notes can be created for a particular article, and the note is displayed for all the users who wants to view the note. A note can be deleted by clicking on the delte button on the side of the note.
+The user will also be able to leave comments on the articles displayed and revisit them later. The comments will be saved to the database as well and associated with their articles. Users will be able to delete comments left on articles as well. All stored comments are visible to every user.
 
 Dependencies
 MongoDB : https://www.mongodb.com/ Express : https://expressjs.com/ Mongoose : https://www.npmjs.com/package/mongoose Cheerio : https://www.npmjs.com/package/cheerio 
