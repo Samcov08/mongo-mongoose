@@ -10,5 +10,16 @@ When a user visits the site, the app will scrape articles from a the NHL website
 
 The user will also be able to leave comments on the articles displayed and revisit them later. The comments will be saved to the database as well and associated with their articles. Users will be able to delete comments left on articles as well. All stored comments are visible to every user.
 
-Dependencies
-MongoDB : https://www.mongodb.com/ Express : https://expressjs.com/ Mongoose : https://www.npmjs.com/package/mongoose Cheerio : https://www.npmjs.com/package/cheerio 
+
+Dependencies:
+express
+express-handlebars
+mongoose
+cheerio
+axios
+
+
+Helpful Links:
+MongoDB Documentation
+Mongoose Documentation
+Cheerio Documentation
