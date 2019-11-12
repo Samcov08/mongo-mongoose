@@ -12,14 +12,14 @@ The user will also be able to leave comments on the articles displayed and revis
 
 
 Dependencies:
-express
-express-handlebars
-mongoose
-cheerio
-axios
+express,
+express-handlebars,
+mongoose,
+cheerio,
+axios.
 
 
 Helpful Links:
-MongoDB Documentation
-Mongoose Documentation
-Cheerio Documentation
+MongoDB Documentation,
+Mongoose Documentation,
+Cheerio Documentation.
