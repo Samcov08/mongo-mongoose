@@ -1,0 +1,17 @@
+{{!-- link --}}
+{{!-- headline --}}
+{{#each articles}}
+<a href={{this.link}}><h1>{{this.headline}}</h1></a>
+{{!-- summary  --}}
+<h2>{{this.summary}}</h2>
+<div>
+    <form action="/articles/{{this.id}}" method="POST">
+<input type="text" name="body">
+<input type="submit" value="Save">
+    </form>
+    {{#each this.note}}
+    <h4>{{this.body}}</h4>
+    {{/each}}
+
+</div>
+{{/each}}
