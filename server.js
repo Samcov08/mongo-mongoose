@@ -96,7 +96,7 @@ app.post("/articles/:id", function(req, res) {
     console.log(req.body);
     db.Note.create(req.body)
         .then(function(dbNote) {
-            return db.Article.findOneAndUpdate({ _id: req.params.id }, { note: dbNote._id }, { new: true });
+            return db.Article.findOneAndUpdate({ _id: req.params.id }, {$push: { note: dbNote._id }}, { new: true });
         })
         .then(function(dbArticle) {
             // send updated article back to the client
@@ -107,6 +107,9 @@ app.post("/articles/:id", function(req, res) {
             res.json(err);
         });
 });
+
+
+// app.delete("/notes/:id", function())
 
 // Start the server
 app.listen(PORT, function() {
