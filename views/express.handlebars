@@ -13,6 +13,7 @@
     </form>
     {{#each this.note}}
     <h4>{{this.body}}</h4>
+    <button type="submit" class="noteDel" value="{{this.id}}">Delete</button>
     {{/each}}
 
 </div>

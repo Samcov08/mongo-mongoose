@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en-us">
 
-    <head>
-        <title>Dallas Stars Highlights</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Dekko|Roboto|Walter+Turncoat" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css"> 
-    </head>
+<head>
+    <title>Dallas Stars Highlights</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dekko|Roboto|Walter+Turncoat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <body>
+<body>
     {{!-- <nav class="nav justify-content-center">
       <a class="nav-link active" href="#">Link</a>
       <a class="nav-link" href="#">Link</a>
@@ -18,24 +19,31 @@
     </nav> --}}
     <div class="container" id="title">
         <center>
-        <h1>SCRAPPER - Dallas Stars Highlights</h1> 
-        <p>Go victory green!</p>
+            <h1>SCRAPPER - Dallas Stars Highlights</h1>
+            <p>Go victory green!</p>
         </center>
-      </div>
+    </div>
     </div>
 
-        <div class="container" id="wrapper">
-            {{{ body }}}
-        </div>
+    <div class="container" id="wrapper">
+        {{{ body }}}
+    </div>
 
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-        <script 
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-            crossorigin="anonymous"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(".noteDel").on("click", function () {
+            var noteId = $(this).val();
+            $.ajax({
+                method: "DELETE",
+                url: "note/" + noteId,
+            }
+            )
+            });
+    </script>
+</body>
 
 </html>
