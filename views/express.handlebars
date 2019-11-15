@@ -1,13 +1,15 @@
-{{!-- link --}}
-{{!-- headline --}}
+{{!-- video link --}}
+{{!-- article headline --}}
 {{#each articles}}
-<a href={{this.link}}><h1>{{this.headline}}</h1></a>
-{{!-- summary  --}}
+<a href={{this.link}}>
+    <h1>{{this.headline}}</h1>
+</a>
+{{!-- article summary  --}}
 <h2>{{this.summary}}</h2>
 <div>
     <form action="/articles/{{this.id}}" method="POST">
-<input type="text" name="body">
-<input type="submit" value="Save">
+        <input type="text" name="body">
+        <input type="submit" value="Submit">
     </form>
     {{#each this.note}}
     <h4>{{this.body}}</h4>
