@@ -1,20 +1,18 @@
-html,
+
 body {
     min-height: 100%;
-    font-family: 'Roboto', sans-serif;
     background-image: url("https://nhl.bamcontent.com/images/photos/308448614/1024x576/cut.jpg");
     background-color: black;
-    color: rgb(15, 160, 15);
-    background-size: cover;
-    height: 100vh;
+
 }
 
-.jumbotron {
+.container{
     margin: 0;
     padding-top: 75px;
     text-align: center;
-    color: white;
+    color: rgb(15, 160, 15);
     font-size: 3rem;
+    
 }
 
 #wrapper {
@@ -25,20 +23,7 @@ body {
     background-color: #C5BEAA;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-}
+} 
 
 
-/* #articles {
-    display: inline-block;
-    overflow: auto;
-    width: 60%;
-    height: 700px;
-    background-color: white;
-}
 
-#notes {
-    width: 30%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    background-color: white;
-} */
